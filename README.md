@@ -1,2 +1,1 @@
-# translate.lang
-translate.lang translate from a country into other
+opt code 80186 code 
