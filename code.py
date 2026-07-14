@@ -12,8 +12,10 @@ g=c.encode()
 for ff in f:
    i=int(ff)
    ii=int(g[counter])
-   fff=0xff & (i+ii)
-   rr=bytearray([0,fff])
+   fff1=0xffff & (i-ii)
+   fff2=(fff1 >> 8) & 0xff
+   fff3=fff1 & 0xff
+   rr=bytearray([fff3,fff2])
    r=r+rr
    counter=counter+1
    if counter>=len(g):
